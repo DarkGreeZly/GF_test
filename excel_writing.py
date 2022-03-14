@@ -22,4 +22,6 @@ def dump_to_xlsx():
         sheet.cell(row=num, column=4, value='Описание')
         num += 1
     book.save(OUT_XLSX_FILENAME)
-    
+
+if __name__ == '__main__':
+    dump_to_xlsx()
